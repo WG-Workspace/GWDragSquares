@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "GWDragSquaresView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    GWDragSquaresView *dragView = [[GWDragSquaresView alloc]initWithFrame:self.view.frame];
+    
+    [self.view addSubview:dragView];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
